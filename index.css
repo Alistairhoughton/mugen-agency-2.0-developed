@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500;600;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* vars  */
+
+:root {
+  --burger-color-light: black;
+  --text-color-light: black;
+  --svg-color-light: black;
+
+  --burger-color-dark: #bb86fc;
+  --text-color-dark: #bb86fc;
+  --svg-color-dark: #bb86fc;
+  --seagreen: #23b296;
+}
+
+[color-scheme="light"] {
+  --burger-color: var(--burger-color-light);
+  --text-color: var(--text-color-light);
+  --svg-color: var(--svg-color-light);
+}
+
+[color-scheme="dark"] {
+  --burger-color: var(--burger-color-dark);
+  --text-color: var(--text-color-dark);
+  --svg-color: var(--svg-color-dark);
+}
+
+.svg-color {
+  fill: var(--svg-color);
+  transition: ease 0.25s
+}
+
+.text-color {
+  color: var(--text-color);
+  transition: ease 0.25s
+}
+
+.burger-color {
+  stroke: var(--burger-color);
+  transition: ease 0.1s
+}
+
+/* vars end */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background 0.3s ease;
+}
+
+/* scrollbar styling */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(104, 104, 104) rgb(46, 46, 46);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(75, 75, 75, 0.274);
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(63, 80, 99, 0.397);
+  border-radius: 60px;
+  border: rgb(255, 255, 255);
+  opacity: 0;
+}
+
+/* scrollbar styling end  */
+
+.nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 10rem 3rem 10rem;
+  z-index: 98;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  padding-right: 10px;
+  gap: 20px;
+}
+
+.logo-container {
+  height: 50px;
+  width: 150px;
+  padding: 0 1rem 0 1rem;
+}
+
+.logo-container:hover {
+  cursor: pointer;
+}
+
+/* burger styling  */
+
+#burger {
+  display: flex;
+  width: 29px;
+  height: 29px;
+  /* transition: ease 0.3s */
+}
+
+#burger > * {
+  transition: ease 0.15s
+}
+
+.line-one-high {
+  /* transition: ease-in-out 0.15s; */
+}
+
+.line-two-high {
+  /* transition: ease-in-out 0.15s; */
+}
+
+.line-three-high {
+  /* transition: ease-in-out 0.15s; */
+}
+
+.line-four-high {
+  /* transition: ease-in-out 0.15s; */
+}
+
+#burger:hover .line-one-high {
+  transform: translateX(30px);
+}
+
+#burger:hover .line-two-high {
+  transform: translateX(-60px);
+}
+
+/* burger styling end  */
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio {
+  margin: 0 20% 0 20%;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 18%;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section > h1,
+p {
+  z-index: 2;
+}
+
+.animation-position-container {
+  position: absolute;
+  z-index: 1;
+  top: 26%;
+  right: 17%;
+}
+
+.hero-section > * {
+  text-align: left;
+}
+
+.title {
+  font-family: "Andada Pro", serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.sub-title {
+  font-family: "Andada Pro", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.test {
+  padding: 0;
+}
+
+.burger-button {
+  background-color: transparent;
+  border: none;
+}
+
+.burger-button:hover {
+  cursor: pointer;
+}
+
+.nav-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--seagreen);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+
+.nav-overlay-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 6rem 10rem 3rem 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding-right: 10px;
+}
+
+.logo-x {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  transition: ease-in-out 0.25s;
+}
+
+.logo-x:hover {
+  transform: rotate(90deg);
+}
+
+/* media query notes  */
+
+/* use 3 rem for small devices on margin playaround */

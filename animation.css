@@ -1,0 +1,293 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* reset */
+
+/* ---------------------------------------- */
+
+/* vars */
+
+:root {
+  --tan: #c5bddd;
+  --offWhite: #f7ede2;
+  --salmon: #f5cac3;
+  --pastelGreen: #f6bd60;
+  --redClay: #f28482;
+  --airForceBlue: #93b7be;
+  --navy: #2d3047;
+
+  /* dark mode color shape vars  */
+
+  
+}
+
+
+/* vars */
+
+.animation-container {
+  aspect-ratio: 1.618;
+  width: 50vmin;
+  position: relative;
+}
+
+.animation-container > .shape {
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  transition: left, top, height, width, border-radius;
+  transition-duration: 750ms;
+  transition-timing-function: ease;
+}
+
+.animation-container > .shape:nth-child(1) {
+  background-color: var(--offWhite);
+  transition: ease 0.3s;
+}
+
+.animation-container > .shape:nth-child(2) {
+  background-color: var(--pastelGreen);
+  transition: ease 0.3s;
+}
+
+.animation-container > .shape:nth-child(3) {
+  background-color: var(--redClay);
+  transition: ease 0.3s;
+}
+
+.animation-container > .shape:nth-child(4) {
+  background-color: var(--salmon);
+  transition: ease 0.3s;
+}
+
+.animation-container > .shape:nth-child(5) {
+  background-color: var(--tan);
+  transition: ease 0.3s;
+}
+
+.animation-container > .shape:nth-child(6) {
+  background-color: var(--airForceBlue);
+  transition: ease 0.3s;
+}
+
+.animation-container > .shape:nth-child(7) {
+  background-color: var(--navy);
+  transition: ease 0.3s;
+}
+
+/* data configs  */
+
+/* dataset 1 */
+
+.animation-container[data-configuration="1"] > .shape:nth-child(1) {
+  left: 0%;
+  top: 0%;
+  height: 50%;
+  width: 20%;
+}
+
+.animation-container[data-configuration="1"] > .shape:nth-child(2) {
+  left: 20%;
+  top: 0%;
+  height: 50%;
+  width: 30%;
+}
+
+.animation-container[data-configuration="1"] > .shape:nth-child(3) {
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  width: 50%;
+}
+
+.animation-container[data-configuration="1"] > .shape:nth-child(4) {
+  left: 0%;
+  top: 50%;
+  height: 50%;
+  width: 30%;
+}
+
+.animation-container[data-configuration="1"] > .shape:nth-child(5) {
+  left: 30%;
+  top: 50%;
+  height: 50%;
+  width: 20%;
+}
+
+.animation-container[data-configuration="1"] > .shape:nth-child(6) {
+  left: 70%;
+  top: 50%;
+  height: 50%;
+  width: 30%;
+}
+
+.animation-container[data-configuration="1"] > .shape:nth-child(7) {
+  left: 85%;
+  top: 75%;
+  height: 25%;
+  width: 15%;
+}
+
+/* dataset 1 */
+
+/* ------------------------------------------ */
+
+/* dataset 2  */
+
+.animation-container[data-configuration="2"] > .shape:nth-child(1) {
+  left: 25%;
+  top: 20%;
+  height: 80%;
+  width: 15%;
+}
+
+.animation-container[data-configuration="2"] > .shape:nth-child(2) {
+  left: 40%;
+  top: 20%;
+  height: 50%;
+  width: 10%;
+}
+
+.animation-container[data-configuration="2"] > .shape:nth-child(3) {
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  width: 25%;
+}
+
+.animation-container[data-configuration="2"] > .shape:nth-child(4) {
+  left: 0%;
+  top: 0%;
+  height: 50%;
+  width: 10%;
+}
+
+.animation-container[data-configuration="2"] > .shape:nth-child(5) {
+  left: 10%;
+  top: 0%;
+  height: 70%;
+  width: 15%;
+}
+
+.animation-container[data-configuration="2"] > .shape:nth-child(6) {
+  left: 75%;
+  top: 10%;
+  height: 80%;
+  width: 15%;
+}
+
+.animation-container[data-configuration="2"] > .shape:nth-child(7) {
+  left: 90%;
+  top: 40%;
+  height: 60%;
+  width: 10%;
+}
+
+/* dataset 2  */
+
+/* ---------------------------------- */
+
+/* dataset 3  */
+
+.animation-container[data-configuration="3"] > .shape:nth-child(1) {
+  left: 0%;
+  top: 16.5%;
+  height: 32%;
+  width: 20%;
+}
+
+.animation-container[data-configuration="3"] > .shape:nth-child(2) {
+  left: 20%;
+  top: 2.7%;
+  height: 55%;
+  width: 34%;
+}
+
+.animation-container[data-configuration="3"] > .shape:nth-child(3) {
+  left: 38%;
+  top: 0%;
+  height: 100%;
+  width: 62%;
+}
+
+.animation-container[data-configuration="3"] > .shape:nth-child(4) {
+  left: 0%;
+  top: 47.3%;
+  height: 55%;
+  width: 34%;
+}
+
+.animation-container[data-configuration="3"] > .shape:nth-child(5) {
+  left: 34%;
+  top: 56.4%;
+  height: 32%;
+  width: 20%;
+}
+
+.animation-container[data-configuration="3"] > .shape:nth-child(6) {
+  left: 66%;
+  top: 45%;
+  height: 55%;
+  width: 34%;
+}
+
+.animation-container[data-configuration="3"] > .shape:nth-child(7) {
+  left: 80%;
+  top: 68%;
+  height: 32%;
+  width: 20%;
+}
+
+/* dataset 3 */
+
+/* ------------------------------------ */
+
+/* data roundness */
+
+.animation-container[data-roundness="1"] > .shape {
+  border-radius: 6rem;
+}
+
+.animation-container[data-roundness="2"] > .shape {
+  border-radius: 0rem;
+}
+
+.animation-container[data-roundness="3"] > .shape {
+  border-radius: 30rem;
+}
+
+.animation-container[data-roundness="4"] > .shape:nth-child(1) {
+  border-bottom-left-radius: 10rem;
+}
+
+.animation-container[data-roundness="4"] > .shape:nth-child(2) {
+  border-radius: 20rem;
+}
+
+.animation-container[data-roundness="4"] > .shape:nth-child(3) {
+  border-top-right-radius: 12rem;
+}
+
+.animation-container[data-roundness="4"] > .shape:nth-child(4) {
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+}
+
+.animation-container[data-roundness="4"] > .shape:nth-child(5) {
+  border-bottom-left-radius: 10rem;
+}
+
+.animation-container[data-roundness="4"] > .shape:nth-child(6) {
+  border-top-left-radius: 16rem;
+}
+
+.animation-container[data-roundness="4"] > .shape:nth-child(7) {
+  border-top-left-radius: 10rem;
+}
+
+/* data roundness */
